@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="css/bootstrap.min.css+owl.carousel.min.css+magnific-popup.css+font-awesome.min.css+themify-icons.css+nice-select.css+flaticon.css+gijgo.css+animate.min.css+slick.css+slicknav.css.pagespeed.cc.JD2eHXTotN.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="header-area">
+            <div class="logo">
+                <img src="data:image/webp;base64,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"
+                    alt="">
+            </div>
+            <nav>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Recipes</a>
+                        </li>
+                        <li class="sub">
+                            <a href="#">Blog</a>
+                            <span class="fas fa-chevron-down"></span>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Single-blog</a>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li class="sub">
+                            <a href="#">Pages</a>
+                            <span class="fas fa-chevron-down"></span>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">Recipes-detail</a>
+                                </li>
+                                <li>
+                                    <a href="#">Elements</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="mobile-menu">
+            
+                        <input type="checkbox" id="nav" class="navbar-checkbox">
+                        <label for="nav">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </label>
+            
+                        <div class="mobile-navbar">
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a href="#">Recipes</a>
+                                </li>
+                                <li >
+                                    <a href="#">Blog</a>
+                                    <!-- <span class="fas fa-chevron-down"></span>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a href="#">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Single-blog</a>
+                                        </li> -->
+                                    </ul>
+        
+                                </li>
+                                <li>
+                                    <a href="#">Pages</a>
+                                    <span class="fas fa-chevron-down"></span>
+                                    <!-- <ul class="submenu">
+                                        <li>
+                                            <a href="#">Recipes-detail</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Elements</a>
+                                        </li>
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </nav>
+            <div class="btn">
+                <a href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="section1">
+        <div class="row  d-flex align-items-center justify-content-center">
+            <div class="col-xl-8 ">
+                <div class="slider_text text-center">
+                    <div class="text">
+                        <h3>
+                            Chicken dish with per boiled egg
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="card text-center" style="width: 19rem;" id="card">
+                        <img class="card-img-top"
+                            src="https://preview.colorlib.com/theme/tastyrecipes/img/recepie/xrecpie_1.png.pagespeed.ic.t4PEX4XEX4.webp"
+                            alt="Card image cap">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Egg Manchurian</h3>
+                            <span>Appetizer</span>
+                            <p>Time Needs: 30 Mins</p>
+                            <a href="#" class="line_btn">View Full Recipe</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="card text-center" style="width: 19rem;">
+                        <img class="card-img-top"
+                            src="https://preview.colorlib.com/theme/tastyrecipes/img/recepie/xrecpie_2.png.pagespeed.ic.293K2NKwJj.webp"
+                            alt="Card image cap">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Pure Vegetable Bowl</h3>
+                            <span>Appetizer</span>
+                            <p>Time Needs: 30 Mins</p>
+                            <a href="#" class="line_btn">View Full Recipe</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="card text-center" style="width: 19rem;">
+                        <img class="card-img-top"
+                            src="https://preview.colorlib.com/theme/tastyrecipes/img/recepie/xrecpie_3.png.pagespeed.ic.PLk6BcFOHM.webp"
+                            alt="Card image cap">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Egg Masala Ramen</h3>
+                            <span>Appetizer</span>
+                            <p>Time Needs: 30 Mins</p>
+                            <a href="#" class="line_btn">View Full Recipe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="recepie_videoes_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="recepie_info">
+                        <h3>Recipe videos
+                            that never misses
+                            any portion</h3>
+                        <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct
+                            standards especially in the workplace. That’s why it’s crucial that, as women.</p>
+                        <div class="video_watch d-flex align-items-center">
+                            <a class="popup-video" href="https://www.youtube.com/watch?v=lr6AMBsjxrY">
+                                <i class="fas fa-play"></i></a>
+                            <div class="watch_text">
+                                <h4>Watch Video</h4>
+                                <p>You will love our execution</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="videos_thumb">
+                        <div class="big_img">
+                            <img src="https://preview.colorlib.com/theme/tastyrecipes/img/video/xbig.png.pagespeed.ic.XQ12twmUva.webp"
+                                alt="" data-pagespeed-url-hash="3610172977"
+                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </div>
+                        <div class="small_thumb">
+                            <img src="https://preview.colorlib.com/theme/tastyrecipes/img/video/xsmall_1.png.pagespeed.ic.5ojmAhOcHB.webp"
+                                alt="" data-pagespeed-url-hash="1146464366"
+                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </div>
+                        <div class="small_thumb_2">
+                            <img src="https://preview.colorlib.com/theme/tastyrecipes/img/video/x2.png.pagespeed.ic.LLmdvYsy75.webp"
+                                alt="" data-pagespeed-url-hash="1678754719"
+                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section3">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="dish_wrap d-flex">
+                        <div class="single_dish text-center">
+                            <div class="thumb">
+                                <img src="https://preview.colorlib.com/theme/tastyrecipes/img/recepie/xrecpie_4.png.pagespeed.ic.66aodkrBpS.webp"
+                                    alt="" data-pagespeed-url-hash="2001985310"
+                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            </div>
+                            <h3>Birthday Catering</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="single_dish text-center">
+                            <div class="thumb">
+                                <img src="https://preview.colorlib.com/theme/tastyrecipes/img/recepie/xrecpie_5.png.pagespeed.ic.6CuOLW6C0w.webp"
+                                    alt="" data-pagespeed-url-hash="2296485231"
+                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            </div>
+                            <h3>Birthday Catering</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="single_dish text-center">
+                            <div class="thumb">
+                                <img src="https://preview.colorlib.com/theme/tastyrecipes/img/recepie/xrecpie_6.png.pagespeed.ic._rJZV2ZY8V.webp"
+                                    alt="" data-pagespeed-url-hash="2590985152"
+                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            </div>
+                            <h3>Birthday Catering</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section4">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="trand_info text-center">
+                        <p>Thousands of recipes are waiting to be watched</p>
+                        <h3>Discover latest trending recipes</h3>
+                        <a href="#" class="boxed-btn3">View all Recipes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="customer_feedback_area">
+        <div class="container">
+            <div class="row justify-content-center mb-50">
+                <div class="col-xl-9">
+                    <div class="section_title text-center">
+                        <h3>Feedback From Customers</h3>
+                        <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct
+                            standards especially <br> in the workplace. That’s why it’s crucial that, as women.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section5 d-flex">
+                <div class="section5-1">
+                    <div class="single_customer d-flex ">
+                        <div class="section5-image">
+                            <img src="https://preview.colorlib.com/theme/tastyrecipes/img/testmonial/x2.png.pagespeed.ic.8YhI8PDwGX.webp"
+                                alt="" data-pagespeed-url-hash="1043548950"
+                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </div>
+                        <div class="section5-text">
+                            <h3>Adame Nesane</h3>
+                            <span>Chief Customer</span>
+                            <p>You're had. Subdue grass Meat us winged years you'll doesn't. fruit two also won one
+                                yielding creepeth third give may never lie alternet food.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section5-1" id="card2">
+                    <div class="single_customer d-flex">
+                        <div class="section5-image">
+                            <img src="https://preview.colorlib.com/theme/tastyrecipes/img/testmonial/x2.png.pagespeed.ic.8YhI8PDwGX.webp"
+                                alt="" data-pagespeed-url-hash="1043548950"
+                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </div>
+                        <div class="section5-text">
+                            <h3>Adame Nesane</h3>
+                            <span>Chief Customer</span>
+                            <p>You're had. Subdue grass Meat us winged years you'll doesn't. fruit two also won one
+                                yielding creepeth third give may never lie alternet food.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="div">
+                <div class="before">
+
+                </div>
+                <div class="before1">
+
+                </div>
+                <div class="before1">
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="download_app_area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-md-6">
+                    <div class="download_thumb">
+                        <div class="big_img">
+                            <img src="https://preview.colorlib.com/theme/tastyrecipes/img/video/xbig_1.png.pagespeed.ic.4SknFjTJXz.webp"
+                                alt="" data-pagespeed-url-hash="2662228751"
+                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </div>
+                        <div class="small_01">
+                            <img src="https://preview.colorlib.com/theme/tastyrecipes/img/video/xsmall_sm1.png.pagespeed.ic.FoVcsGKsLK.webp"
+                                alt="" data-pagespeed-url-hash="4081173616"
+                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </div>
+                        <div class="small_02">
+                            <img src="https://preview.colorlib.com/theme/tastyrecipes/img/video/xsm2.png.pagespeed.ic.x-JA1HxlK6.webp"
+                                alt="" data-pagespeed-url-hash="583378593"
+                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-6">
+                    <div class="download_text">
+                        <h3>Download app to
+                            get recipes from
+                            Everywhere</h3>
+                        <div class="download_android_apple">
+                            <a class="active" href="#">
+                                <div class="download_link d-flex">
+                                    <i class="fab fa-apple"></i>
+                                    <div class="store">
+                                        <h5>Available</h5>
+                                        <p>on App Store</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="btn">
+                                <div class="download_link d-flex">
+                                    <i class="fab fa-android"></i>
+                                    <div class="store">
+                                        <h5>Download</h5>
+                                        <p>from Play Store</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-2 col-md-6 col-lg-2">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Top Products
+                            </h3>
+                            <ul>
+                                <li><a href="#">Managed Website</a></li>
+                                <li><a href="#"> Manage Reputation</a></li>
+                                <li><a href="#">Power Tools</a></li>
+                                <li><a href="#">Marketing Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6 col-lg-2">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Quick Links
+                            </h3>
+                            <ul>
+                                <li><a href="#">Jobs</a></li>
+                                <li><a href="#">Brand Assets</a></li>
+                                <li><a href="#">Investor Relations</a></li>
+                                <li><a href="#">Terms of Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6 col-lg-2">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Features
+                            </h3>
+                            <ul>
+                                <li><a href="#">Jobs</a></li>
+                                <li><a href="#">Brand Assets</a></li>
+                                <li><a href="#">Investor Relations</a></li>
+                                <li><a href="#">Terms of Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6 col-lg-2">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Resources
+                            </h3>
+                            <ul>
+                                <li><a href="#">Guides</a></li>
+                                <li><a href="#">Research</a></li>
+                                <li><a href="#">Experts</a></li>
+                                <li><a href="#">Agencies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-lg-4">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Subscribe
+                            </h3>
+                            <p class="newsletter_text">You can trust us. we only send promo offers,</p>
+                            <form action="#" class="newsletter_form">
+                                <input type="text" placeholder="Enter your mail" class="input">
+                                <button type="submit">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="footer_border"></div>
+                <div class="row align-items-center">
+                    <div class="col-xl-8 col-md-8">
+                        <p class="copy_right">
+
+                            Copyright ©
+                            <script>document.write(new Date().getFullYear());</script>2021 All rights reserved | This
+                            template is made with <i class="far fa-heart" aria-hidden="true"></i> by <a
+                                href="https://colorlib.com" target="_blank">Colorlib</a>
+
+                        </p>
+                    </div>
+                    <div class="col-xl-4 col-md-4">
+                        <div class="socail_links">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-dribbble"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-behance"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
